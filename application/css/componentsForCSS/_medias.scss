@@ -1,0 +1,66 @@
+// Medias
+//
+// Resizing of buttons and other tags to transition desktop view to that of an smart phone app.
+//
+// Styleguide Medias
+
+/*All media sizing for single handheld mobile devices*/
+@media (max-width: 426px) {
+  #rightSidebar,
+  #leftSidebar,
+  #centerSidebar{
+    height: 100%;
+    width:100%;
+    right:100%
+  }
+
+  #rightSidebar.active,
+  #leftSidebar.active,
+  #centerSidebar.active {
+    left:0;
+  }
+  ul{
+    margin-right: 20px;
+  }
+  #centerDismiss, #leftDismiss, #rightDismiss{
+    font-size:50px;
+  }
+  ul.CTAs {
+      padding: 20px;
+      padding-left: 40px;
+  }
+  table{
+    width: 100%;
+    margin: 0px;
+  }
+
+  #user-menu{
+    top: 0px;
+    width: 100%;;
+    position: absolute;
+    left: 0%;
+    transform: translate(0%);
+    color:$unintensiveWhite;
+    background:$userButtonColor;
+  }
+}
+
+/*media sizing for single handheld mobile devices of medium and large size*/
+@media (max-width: 426px) and (min-width:375px){
+  .col-xs-3{
+    button{
+      font-size: 14px;
+      width: 25vw;
+    }
+  }
+}
+
+/*media sizing for single handheld mobile devices of small size*/
+@media (min-width: 310px) and (max-width: 375px){
+  .col-xs-3{
+      button{
+        font-size: 11px;
+        width: 25vw;
+      }
+  }
+}

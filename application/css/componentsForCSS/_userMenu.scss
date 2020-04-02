@@ -1,0 +1,38 @@
+// User Menu
+//
+// Components that were used 
+//
+// Styleguide User Menu
+
+
+
+#user-menu{
+    top: 0px;
+    width: 404px;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    color:$unintensiveWhite;
+    background:$userButtonColor;
+    outline: 3px solid black;
+    margin-top:3px;
+}
+
+.col-lg-12{
+    text-align: center;
+    position: fixed;
+    .row{
+        display: inline-flex;
+    }
+}
+  
+.col-xs-3 button{
+    width: 101px;
+    padding-left:0px;
+    padding-right:0px;
+}
+
+svg:not(:root).svg-inline--fa {
+    overflow: visible;
+    width: .8em;
+}

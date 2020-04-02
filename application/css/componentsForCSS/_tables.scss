@@ -1,0 +1,33 @@
+// Tables
+//
+// Ids and Classes used for styling the auto generated tables concerning Event Information.
+//
+// Styleguide Tables
+
+table, th, td {
+    border: 3px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    margin:auto;
+}
+
+#conference-table{
+    margin-bottom:20px;
+}
+
+#conference-table table, #schedule-table table{
+    margin: 0px auto;
+}
+
+#conference-table, #schedule-table{
+    text-align: center;
+}
+
+.fa-plus-circle{
+    color:green;
+}
+.fa-times-circle{
+    color:red;
+}

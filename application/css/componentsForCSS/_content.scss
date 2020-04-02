@@ -1,0 +1,107 @@
+// Content
+//
+// Components used for primary layout of user interface once signed into application.
+//
+// Styleguide Content
+
+
+html{
+    background: white;
+    width: 100%;
+}
+
+header{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+body {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    overflow-x:hidden;
+    background-image: url($urlBackground);
+}
+
+#content {
+    width: 100%;
+    padding: 0px 20px 20px 20px;
+    margin-top: 0px;
+    min-height: 100vh;
+    /*transition: all 0.3s;*/
+    right: 0;
+    padding-top: 230px;
+}
+
+#innerContent{
+    background: $unintensiveWhite;
+    padding: 20px;
+    height: -webkit-fill-available;
+    overflow: auto;
+    text-align: center;
+
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #101010;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    /*transition: all 0.3s;*/
+}
+
+#footer{
+    outline:0; 
+    background-color:$primaryColor; 
+    color:$unintensiveWhite; 
+    padding:10px; 
+    max-width:none;
+}
+
+.fl-page-footer-text{
+    text-align: center;
+}
+
+#symposium-title{
+    font-family: unset;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.navbar {
+    padding: 15px 10px;
+    border: none;
+    border-radius: 0;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    background: $primaryColor!important;
+    margin-bottom:30px;
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.layout-button{
+    background: $userButtonColor;
+    border:none;
+    color: $unintensiveWhite;
+    margin-bottom:20px;
+    width: 80%;
+    &:hover{
+    background:$unintensiveWhite;
+    color:red;
+    }
+}
+
+#welcome-user{
+    font-size: 1.75rem !important;
+}

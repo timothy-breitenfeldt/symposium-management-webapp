@@ -1,0 +1,17 @@
+// Screenreader Assistance
+//
+// Provides a nearly invisible tag that is used to pass aria-live messages for actions that isn't spoken already
+// by the screen reader.
+//
+// styleguide Screenreader Assistance
+
+.screenreader-text {
+    border: 0; 
+    clip: rect(0 0 0 0); 
+    height: 1px; 
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}

@@ -1,0 +1,80 @@
+// InnerContent
+//
+// Styling specific for inner tables (dropdown tables) that are auto generated to show user more information about events.
+//
+// Styleguide InnerContent
+
+#innerContent{
+    background: #17a2b8;
+    border-color:black;
+    border-width:3px;
+    border-style:solid;
+	text-align:center;
+    color:white;
+    height: auto;
+}
+
+
+
+table{
+    font-weight: bold;
+    p{
+        color:white;
+        padding-top:1em;
+    }
+   
+}
+th{
+    padding-left:5px;
+    padding-right:5px;
+	margin:auto;
+	word-wrap:break-word;
+}
+.dropbtn,  .delBtn, .addBtn{
+    border-style:solid;
+    border-color:black;
+    background-color: #17a2b8;
+    margin:2px;
+	font-weight: bold;
+	color: white;
+}
+
+#showConferenceSchedule, #showMySchedule {
+	    border-style:solid;
+    border-color:black;
+	color: white;
+		font-weight: bold;
+	background-color: firebrick;
+}
+
+#divUsers{
+    padding-top:30px;
+    padding-bottom:30px;
+}
+
+//tr:nth-child(even){background: #17a2b8;}
+//tr:nth-child(odd){background: crimson;}
+
+tr{background: firebrick; border-color:red;};
+td{
+	padding-left: 5px;
+	padding-right: 5px;
+	// width: 20px;
+	min-width: 60px;
+}
+
+#divAdd{
+    background-color:burlywood;
+    padding-left:5px;
+    padding-top:5px;
+    padding-bottom:5px;
+    border-color:black;
+    border-width:3px;
+    border-style:solid;
+    width:500px;
+}
+.txtEditField{
+    display:flex;
+    border-color:black;
+    border-width:thin;
+}

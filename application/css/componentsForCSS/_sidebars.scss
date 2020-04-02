@@ -1,0 +1,211 @@
+// Sidebars
+//
+// Styling used for sidebars that are called upon when use presses respective userMenu button.
+//
+// Styleguide Sidebars
+
+#dismiss {
+    width: 100%;
+    text-align: center;
+    background: $userButtonColor;
+    top: 10px;
+    right: 10px;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3￼    s;
+    transition: all 0.3s;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 998;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    &.active{
+      display: block;
+      opacity: 1;
+      position: fixed;
+    }
+}
+
+#leftSidebar, #rightSidebar, #centerSidebar {
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0px;
+  height: 100vh;
+  z-index: 999;
+  background: $primaryColor;
+  color: $unintensiveWhite;
+  transition: all 0.3s;
+  overflow-x: hidden !important;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+  overflow-y: overlay;
+  text-align: center;
+  &::-webkit-scrollbar
+  {
+      width: 0px;
+  }
+  &::-webkit-scrollbar-track-piece
+  {
+      background-color: transparent;
+  }
+}
+
+#leftSidebar.active, 
+#rightSidebar.active,
+#centerSidebar.active {
+  right: 0;
+}
+
+#leftSidebar .sidebar-header,
+#rightSidebar .sidebar-header,
+#centerSidebar .sidebar-header{
+    padding: 20px;
+    background: $primaryColor;
+}
+
+#leftSidebar ul.components,
+#rightSidebar ul.components,
+#centerSidebar .centerSidebar-header{
+    padding: 20px 0;
+    border-bottom: 1px $primaryColor;
+}
+
+#leftSidebar ul p,
+#rightSidebar ul p,
+#centerSidebar ul p{
+    color: $unintensiveWhite;
+    padding: 10px;
+}
+
+#leftSidebar ul li a,
+#rightSidebar ul li a,
+#centerSidebar ul li a{
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+    &:hover{
+      color: $primaryColor;
+      background: $unintensiveWhite;
+    }
+}
+
+#leftSidebar ul li.active>a,
+#rightSidebar ul li.active>a,
+#centerSidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: $unintensiveWhite;
+    background: $darkerPrimaryColor;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    background: rgb(188, 20, 63);
+}
+
+ul.CTAs {
+    padding: 20px;
+    a{
+      text-align: center;
+      font-size: 0.9em !important;
+      display: block;
+      border-radius: 5px;
+      margin-bottom: 5px;
+    }
+}
+
+a.menu-button,
+a.menu-button:hover,
+a.download {
+  background: $unintensiveWhite;
+  color: red;
+}
+
+.sidebar-heading{
+  text-align: center;
+}
+
+.btn:not(.font-size){
+  padding: 15px 10px;
+  white-space: normal;
+}
+
+.close-menu{
+  background: $userButtonColor;
+  color: $unintensiveWhite;
+  border-radius:0;
+  font-size:0.875;
+  word-wrap: break-word;
+  width: 120px; /*only for IE8*/
+  max-width: 100%;
+  width:100%;
+  border-width: 0px;
+  &:hover{
+    background: $unintensiveWhite;
+    color: red;
+  }
+}
+
+.fa-arrow-right, .fa-arrow-left{
+  font-size: 52px;
+}
+
+.dropdown-button{
+  padding: 10px;
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
+  color: $unintensiveWhite;
+  background: rgb(188, 20, 63);
+  border: none;
+  text-align: center;
+  width:100%;
+  &:hover{
+    background:$unintensiveWhite;
+    color:$primaryColor;
+    transition: all 0.3s;
+  }
+}
+
+button.dropdown-button:not(.collapsed)[aria-expanded="true"]{
+  background-color:$backgroundColor;
+  color:red;
+}
+
+.list-unstyled{
+  margin-right: 0px;
+  font-size: 24px;
+  text-align:center;
+}
+
+.button-fix{
+  display:inline-block;
+  margin-left:0px;
+  width:90%;
+  margin-top:20px;
+}
+
+#font-settings-li button{
+  width:auto;
+  margin-left:0px;
+}
+
+.no-scroll{
+  overflow-y: hidden
+}

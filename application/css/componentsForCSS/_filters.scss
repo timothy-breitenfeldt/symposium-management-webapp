@@ -1,0 +1,35 @@
+// Filters
+//
+// Filters used to mask entire page. Allow users to be able to switch color scheme in simple way.
+//
+// Styleguide Filters
+
+// GrayStyle
+//
+// Used to change display for users who prefer gray color scheme.
+//
+// Markup:
+// <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" class="gray-style-filter">
+//
+// Styleguide Filters.Graystyle
+
+.gray-style-filter{
+    -moz-filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    filter : 'gray';
+    -moz-filter: grayscale(100%);
+}
+
+// InverseStyle
+//
+// Used to change display for users who prefer inverse color scheme.
+//
+// Markup:
+// <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" class="inverse-style-filter">
+//
+// Styleguide Filters.Inverse
+
+.inverse-style-filter{
+    -webkit-filter : invert(.8);
+    filter : invert(.8);
+}
